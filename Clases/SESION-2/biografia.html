@@ -80,6 +80,38 @@
         </p>
     </main>
 
+    <section>
+        <!--se recomienda utilizar un metodo post-->
+        <!--action: indica la página a la que se envían los datos del formulario-->
+        <form action="#" method="get">
+            <label for="nombre">Nombre</label><!--label se conecta con el id-->
+            <input type="text" id="nombre" name="nombre"/><!--name se ocupa para cuando ocupamos un formulario normal-->
+            <br />
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" />
+            <br />
+            <input type="radio" id="masculino" name="genero" value="M"/>
+            <label for="masculino">Masculino</label> 
+            <input type="radio" id="femenino" name="genero" value="F"/>
+            <label for="femenino">Femenino</label> 
+            <br/>
+
+            Intereses: <br />
+            <input type="checkbox" value="Marketing Digital" id="marketing-digital" name="md" />
+            <label for="marketing-digital">Marketing Digital</label>
+            <br />
+            <input type="checkbox" value="Email Digital" id="email-digital" name="em" />
+            <label for="email-digital">Email Digital</label>
+            <br />
+            <input type="checkbox" value="Marketing Directo" id="marketing-directo" name="mdir" />
+            <label for="marketing-directo">Marketing Directo</label>
+            <br />
+            <!--botones-->
+            <!--<input type="submit" value="Suscribir"/>-->
+            <button type="submit">Suscribir</button>
+        </form>
+    </section>
+
     <!-- Pie de página -->
     <footer>
         PHILIP KOTLER, 1281 GULF OF MEXICO DRIVE, APT. 907, LONGBOAT KEY, FL. 34228, USAPKOTLER@AOL,COM
