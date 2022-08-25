@@ -7,8 +7,11 @@
     <!--Rutas absolutas: tiene dominio y toda la ruta para llegar al archivo. Ejemplo: "https://assets.squarespace.com/universal/default-favicon.ico"-->
     <!--Rutas relativas: armo el enlace o la ruta en base al archivo que estoy escribiendo. Ejemplo: favicon.ico-->
     <!--Se recomienda ocupar rutas relativas porque son más fácil de modificar-->
-    <link rel="shorcut icon" href="favicon.ico"/>
-
+    <link rel="shorcut icon" href="favicon.ico" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!--integrity es por tema de seguridad-->
     <!-- CSS -->
     <link rel="stylesheet" href="css/estilo.css" />
 
@@ -82,29 +85,40 @@
     </main>
 
     <section>
+        <!--Mensaje para avisar que el formulario fue ingresado exitosamente y que no fue ingresado exitosamente-->
+        <div id="form-mensaje-exitoso" class="alert alert-success" role="alert" style="display: none;">
+            <ul></ul>
+        </div>
+        <div id="form-mensaje-error" class="alert alert-danger" role="alert" style="display: none;">
+            <ul></ul>
+        </div>
+
+
         <!--se recomienda utilizar un metodo post-->
         <!--action: indica la página a la que se envían los datos del formulario-->
         <form action="#" method="get">
-            <label for="nombre">Nombre</label><!--label se conecta con el id-->
-            <input type="text" id="nombre" name="nombre"/><!--name se ocupa para cuando ocupamos un formulario normal-->
+            <label for="nombre">Nombre</label>
+            <!--label se conecta con el id-->
+            <input type="text" id="nombre" name="nombre" />
+            <!--name se ocupa para cuando ocupamos un formulario normal-->
             <br />
             <label for="correo">Correo Electrónico</label>
             <input type="email" id="correo" name="correo" />
             <br />
-            <input type="radio" id="masculino" name="genero" value="M"/>
-            <label for="masculino">Masculino</label> 
-            <input type="radio" id="femenino" name="genero" value="F"/>
-            <label for="femenino">Femenino</label> 
-            <br/>
+            <input type="radio" id="masculino" name="genero" value="M" />
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="femenino" name="genero" value="F" />
+            <label for="femenino">Femenino</label>
+            <br />
 
             Intereses: <br />
-            <input type="checkbox" value="Marketing Digital" id="marketing-digital" name="md" />
+            <input type="checkbox" value="Marketing Digital" id="marketing-digital" name="intereses" />
             <label for="marketing-digital">Marketing Digital</label>
             <br />
-            <input type="checkbox" value="Email Digital" id="email-digital" name="em" />
+            <input type="checkbox" value="Email Digital" id="email-digital" name="intereses" />
             <label for="email-digital">Email Digital</label>
             <br />
-            <input type="checkbox" value="Marketing Directo" id="marketing-directo" name="mdir" />
+            <input type="checkbox" value="Marketing Directo" id="marketing-directo" name="intereses" />
             <label for="marketing-directo">Marketing Directo</label>
             <br />
             <!--botones-->
@@ -123,7 +137,12 @@
     <a class="enlace-redsocial" hrerf="#">instagram</a>
 
 
-
+    <!--Se pone aqui para no entorpecer la carga de la página.
+Primero carga la página, luego el estilo y al final la funcionalidad.-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!--otras alternativas para integrar Bootstrap: NPM, Yarn-->
 </body>
 
 </html>
