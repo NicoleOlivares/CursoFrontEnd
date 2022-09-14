@@ -5,13 +5,15 @@ function Cabecera(props) {
     return (
         <header className="bg-rojo">
             <p style={{
-                backgroundColor: "yellow",
-                color:"green"
+                backgroundColor: "aquamarine",
+                color:"black"
             }}>
                 Título: {props.titulo}
             </p>
 
-            <ul>
+            <ul style={{
+                color:"white"
+            }}>
                 <li>Uno</li>
                 <li>Dos</li>
                 <li>Tres</li>
