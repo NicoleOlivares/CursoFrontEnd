@@ -1,11 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import { MiContexto } from './componentes/MiContexto';
+import { useState } from 'react';
 
-function App() {
+function App(props) {
+  const [trago, setTrago] = useState("");
+  const estado = {
+    trago,
+    setTrago
+  };
+
   return (
-    <div className="App">
-      
-    </div>
+    <MiContexto.Provider value={estado}>
+      <div className="App">
+        {props.children}
+      </div>
+    </MiContexto.Provider>
+
   );
 }
 
