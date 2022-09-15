@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { MiContexto } from "./MiContexto";
+
 function Galeria(props) {
+    const contexto = useContext(MiContexto);
+
     return (
-        <section>
-            <h2>{props.titulo}</h2>
+        <section style={{background: "red"}}>
+            <h2>{props.titulo}: {contexto.trago}</h2>
             <div>
                 Fotos aquí...
             </div>

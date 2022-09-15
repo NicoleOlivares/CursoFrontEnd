@@ -7,7 +7,8 @@ function Buscador() {
 
     return (
         <form>
-            <input type="text" 
+            <input 
+            type="text" 
             value={contexto.trago}
             onChange={
                 (e) => contexto.setTrago(e.target.value)

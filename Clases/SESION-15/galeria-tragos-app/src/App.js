@@ -15,7 +15,6 @@ function App(props) {
         {props.children}
       </div>
     </MiContexto.Provider>
-
   );
 }
 

@@ -12,7 +12,7 @@ root.render(
     <App>
       <Buscador />
       {/*<p>Esto es un parrafo</p>*/}
-      <Galeria titulo="Trago: ..."/>
+      <Galeria titulo="Trago: "/>
     </App>
   </React.StrictMode>
 );
