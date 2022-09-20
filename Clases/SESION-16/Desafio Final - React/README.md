@@ -1,7 +1,7 @@
-#Desafío Final - React
+###Desafío Final - React
 Crear formulario de contacto usando React en una sola página HTML. Se pide:
 
--Tener al menos 4 campos: nombre, email, teléfono y motivo de contacto (reclamo, sugerencia o felicitación).
+*Tener al menos 4 campos: nombre, email, teléfono y motivo de contacto (reclamo, sugerencia o felicitación).
 
 -Validar cada uno de los campos usando JS (no validación HTML5).
 
